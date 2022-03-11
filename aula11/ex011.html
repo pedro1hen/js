@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Aeroporto de Congonhas</title>
+    <style>
+        div#main {
+           background-image: linear-gradient(to bottom, rgba(0, 128, 0, 0.753), rgba(255, 255, 0, 0.699));
+           width: 610px;
+           border-radius: 5px;
+           margin: auto;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           padding: 0px 10px;
+        }
+
+        div#resul {
+            width: 700px;
+            height: 20px;
+            text-align: justify;
+            border-radius: 5px;
+            text-indent: 2px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Bem-Vindo(a) ao Brasil!</h1>
+        <p>Diga para nós qual o seu país de origem?</p>
+        <input type="text" name="txtpais" id="pais">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="resul"></div>
+    </div>
+
+    <script>
+        function verificar () {
+            var pais = document.querySelector('input#pais')
+            var resul = document.querySelector('div#resul')
+            var nacao = String(pais.value)
+
+            if (nacao == 'Brasil') {
+                resul.innerHTML = 'Bem-Vindo(a) de volta ao Brasil, não esqueça sua bagagem!'
+            }
+            else {
+                resul.innerHTML = "Welcome to Brazil, it's a pleasure to have you here! Don't forget your luggage!"
+            }
+        }
+    </script>
+</body>
+</html>

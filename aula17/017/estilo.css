@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(0, 204, 255);
+}
+
+header > h1 {
+    font: normal bolder 35px Arial;
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.596);
+}
+
+div#form {
+    padding: 10px;
+}
+
+div#resultado {
+    text-align: center;
+}
+
+p#contar {
+    text-align: center;   
+    font: normal bolder 15px Arial; 
+}
+
+footer {
+    font: normal bolder 15px Arial;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}

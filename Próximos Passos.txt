@@ -1,0 +1,16 @@
+arrow function
+If IIFE
+funções anônimas
+javascript funcional
+
+objetos
+
+modularização
+
+RegEx
+
+json
+
+ajax
+
+nodejs

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do veículo: <input type="number" name="txtvel" id="txtvel">Km/h
+    
+    <p>
+        <input type="button" value="Verificar" id="verificar" onclick="verificar()">
+        <span id="res">Resultado</span>       
+    </p>
+    
+
+    <script>
+        function verificar(){
+            var radar = document.querySelector('input#txtvel')
+            var resultado = document.querySelector('span#res')
+            var vel = Number(radar.value)
+            if (vel >= 60){
+                resultado.innerHTML = `Você ultrapassou o limite permitido! <strong>REDUZA</strong> a velocidade!`
+                resultado.style.background = 'red'
+                resultado.style.color = 'white'
+            }
+            else {
+                resultado.innerHTML = 'Tudo certo! Dirija sempre com o cinto de Segurança'
+                resultado.style.background = 'green'
+                resultado.style.color = 'white'
+            }
+        }
+    </script>
+</body>   
+</html>

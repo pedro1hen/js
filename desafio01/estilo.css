@@ -1,0 +1,45 @@
+@charset "UTF8";
+
+
+body {
+    background-color: #E1B744;
+}
+
+header {
+    font: normal bolder 20px Arial;
+    text-align: center;
+    padding: 10px;
+}
+
+section#form {    
+    font: normal bolder 15px Arial;
+    background-color: white;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+div#entrada {
+    text-align: center;
+    padding: 10px;
+}
+
+div#saida {
+    margin: auto;
+    font: normal 15px Arial;
+}
+
+div#saida > select {
+    width: 176px;
+    height: 150px;
+    margin: 10px 0px 0px 210px;
+}
+
+footer {
+    font: normal 15px Arial;
+    text-align: center;
+    padding: 10px;
+}
